@@ -1,0 +1,55 @@
+.painel {
+  height: 100%;
+  background-color: rgb(226, 226, 226);
+
+  h1 {
+    color: #087EA4;
+    padding: 8vh 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.palestrantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 5.8);
+      flex: 0 1 calc(40% - 10vh);
+      border-radius: 50px 20px;
+      padding: 2%;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      padding: 2vh;
+    }
+
+    button {
+      padding: 0.3rem;
+      margin: 5%;
+      border: none;
+      border-radius: 5px;
+      background-color: $colorButton;
+      color: $colorText;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $colorButtonHover;
+      }
+    }
+  }
+}

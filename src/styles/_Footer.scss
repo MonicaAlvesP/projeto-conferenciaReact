@@ -1,0 +1,40 @@
+.event-footer {
+  background-color: #000000;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #087EA4;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      margin-top: 10px;
+
+      a {
+        margin: 0 10px;
+        color: #087EA4;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #005F7F;
+        }
+      }
+    }
+  }
+}

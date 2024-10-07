@@ -1,0 +1,57 @@
+.info-palestrantes {
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+  padding: 10vh 0;
+
+  h1 {
+    color: #087EA4;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #087EA4;
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+}
+
+.descricao {
+  padding: 10vh;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      color: rgb(157, 209, 255);
+      flex: 0 1 calc(50% - 10px);
+      border-radius: 50px 20px;
+      padding: 2%;
+      background: #020408;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 45, 0.70);
+    }
+
+    img {
+      width: 16vw;
+      height: 30vh;
+      border-radius: 50%;
+      padding-bottom: 2%;
+    }
+
+    p {
+      font-size: 0.8rem;
+      padding: 2vh;
+    }
+
+    a {
+      color: #087EA4;
+      font-size: 2rem;
+    }
+  }
+}

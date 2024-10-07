@@ -1,0 +1,106 @@
+$colorText: #ffffff;
+$colorPrimary: #0d758f;
+$colorSecondary: #8739F9;
+$colorButton: #087EA4;
+$colorButtonHover: #FF5733;
+$colorError: #d82e2e;
+
+.pag-inicial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://blog.me.com.br/wp-content/uploads/2019/01/LEO-e1590513003825.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-evento {
+  width: 50%;
+  justify-content: center;
+
+  h2 {
+    margin: 3vh 0;
+    padding: 2vh 0;
+    color: $colorPrimary;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3vh 0;
+    color: $colorText;
+
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+
+  p {
+    width: 35vw;
+    font-size: small;
+    color: $colorText;
+  }
+}
+
+.formCadastro {
+  width: 40%;
+  height: 60vh;
+  padding: 3vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+
+  h2 {
+    width: 80%;
+    margin: 5vh;
+    color: $colorPrimary;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: $colorText;
+
+    input {
+      padding: 1rem;
+      border: 1px solid $colorButton;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: $colorText;
+    }
+
+    button {
+      padding: 1rem;
+      margin: 5%;
+      border: none;
+      border-radius: 5px;
+      background-color: $colorButton;
+      color: $colorText;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $colorButtonHover;
+      }
+    }
+
+    span {
+      color: $colorError;
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-top: -1rem;
+    }
+  }
+}
